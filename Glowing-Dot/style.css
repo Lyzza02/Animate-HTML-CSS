@@ -31,6 +31,12 @@ body{
     animation: animate 3s linear infinite;
 }
 
+.circle2{
+    width: 200px;
+    height: 200px;
+    animation: animate 6s linear infinite;
+}
+
 @keyframes animate{
     0%{
         transform: rotate(0deg);
