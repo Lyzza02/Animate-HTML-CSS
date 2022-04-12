@@ -23,6 +23,7 @@ body{
     transition: 0.5s;
     color: #fff;
     overflow: hidden;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
 }
 
 .loader:hover{
@@ -112,5 +113,30 @@ body{
     }
     50%, 100%{
         top: -100%;
+    }
+}
+
+.loader h3{
+    font-family: consolas;
+    color: #03e9f4;
+    overflow: hidden;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    border-right: 1px solid #03e9f4;
+    animation: typing 5s steps(10) infinite;
+}
+
+.loader:hover h3{
+    color: #111;
+    border-right: 1px solid #111;
+}
+
+@keyframes typing {
+    0%, 90%, 100%{
+        width: 0px;
+    }
+
+    30%, 60%{
+        width:123.89px;
     }
 }
